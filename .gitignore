@@ -1,0 +1,8 @@
+﻿.venv/
+model/
+Dataset/
+testImages/
+__pycache__/
+*.pyc
+*.pckl
+*.hdf5
