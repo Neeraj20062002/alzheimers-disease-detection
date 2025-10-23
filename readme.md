@@ -1,29 +1,81 @@
-# 🧠 Alzheimer’s Disease Detection
+# 🧠 Alzheimer’s Disease Detection using Deep Learning
 
-This project uses **Deep Learning (CNN)** to detect different stages of Alzheimer’s Disease from **MRI brain scans**, combined with a **Tkinter-based GUI** for user interaction.
-
----
-
-## 🚀 Features
-
-- MRI image input through GUI
-- Trained CNN model for classification
-- Supports multiple brain scan views (Axial, Coronal, Sagittal)
-- Displays accuracy, precision, and recall
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red?logo=keras)
+![Tkinter](https://img.shields.io/badge/GUI-Tkinter-green)
+![Status](https://img.shields.io/badge/Project-Active-success)
 
 ---
 
-## 🧩 Tech Stack
+## 🧩 Project Overview
 
-- **Python 3.11**
-- **TensorFlow / Keras**
-- **OpenCV**
-- **Tkinter (GUI)**
-- **NumPy**, **Pandas**, **Matplotlib**
+Alzheimer’s Disease is one of the most common neurodegenerative disorders affecting millions worldwide.  
+This project leverages **Convolutional Neural Networks (CNN)** to automatically detect and classify different stages of Alzheimer’s Disease from **MRI brain scans**.
+
+A **Tkinter-based Graphical User Interface (GUI)** allows users to upload MRI images, run the trained deep learning model, and visualize the prediction results interactively.
+
+> 💡 *Goal:* Assist medical professionals and researchers by providing an AI-powered tool for early detection and stage classification of Alzheimer’s Disease.
 
 ---
 
-## ⚙️ How to Run
+## 🚀 Key Features
+
+✅ **Automated Detection:** Classifies MRI brain scans into disease stages (e.g., Mild, Moderate, Severe).  
+✅ **Deep Learning Model:** CNN architecture trained on preprocessed MRI data.  
+✅ **Interactive GUI:** Simple Tkinter interface for image upload and prediction.  
+✅ **Multi-View Support:** Handles Axial, Coronal, and Sagittal views of MRI scans.  
+✅ **Evaluation Metrics:** Displays model performance — Accuracy, Precision, Recall, and F1-Score.  
+✅ **Lightweight Deployment:** Works on any system with Python and TensorFlow installed.
+
+---
+
+## 🧠 Model Architecture
+
+The model follows a **Convolutional Neural Network (CNN)** pipeline:
+
+1. **Input Layer:** Preprocessed MRI images (resized and normalized).  
+2. **Conv2D Layers:** Feature extraction using multiple convolution + ReLU blocks.  
+3. **Pooling Layers:** Spatial dimensionality reduction.  
+4. **Flatten & Dense Layers:** Fully connected neural network for classification.  
+5. **Output Layer:** Softmax activation for multi-class stage prediction.
+
+🧪 *Optimizer:* Adam  
+🎯 *Loss Function:* Categorical Crossentropy  
+📈 *Metrics:* Accuracy, Precision, Recall  
+
+---
+
+## 📊 Dataset Details
+
+- **Source:** Kaggle – Alzheimer’s MRI Dataset  
+- **Classes:**  
+  - Mild Demented  
+  - Moderate Demented  
+  - Non-Demented  
+  - Very Mild Demented  
+- **Size:** ~6,400 MRI images  
+- **Preprocessing:**  
+  - Normalization and resizing  
+  - Augmentation (rotation, zoom, shear) for generalization
+
+---
+
+## 🧰 Tech Stack
+
+| Category | Tools / Libraries |
+|-----------|-------------------|
+| **Language** | Python 3.11 |
+| **Deep Learning** | TensorFlow · Keras |
+| **Data Handling** | NumPy · Pandas |
+| **Image Processing** | OpenCV |
+| **Visualization** | Matplotlib |
+| **GUI** | Tkinter |
+| **Environment** | Virtualenv / Anaconda |
+
+---
+
+## ⚙️ How to Run the Project
 
 ```bash
 # Clone the repository
@@ -39,4 +91,3 @@ pip install -r requirements.txt
 
 # Run the app
 python Main.py
-```
