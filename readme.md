@@ -91,3 +91,17 @@ pip install -r requirements.txt
 
 # Run the app
 python Main.py
+
+---
+
+## 🔮 Future Improvements
+
+- Add model explainability with Grad-CAM visualizations.
+- Improve GUI design with modern themes.
+- Integrate cloud-based model serving (TensorFlow Lite / ONNX).
+
+---
+
+### 📅 Update Log
+- **Oct 25, 2025:** Added future improvements section and updated documentation.
+
